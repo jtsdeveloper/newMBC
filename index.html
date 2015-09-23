@@ -54,7 +54,7 @@
     <!--End Fixed Navbar-->
     
     <!--Begin Intro Section-->
-    <header class= "header intro-img" id= "intro">
+    <header class= "header intro-img" id= "home">
         <div class= "container">
             <h1>Maranatha Baptist Church</h1>
             <h3>Sharing Christ's love in all its forms with our<br>
@@ -186,17 +186,79 @@
     </div>
     <!--End About Section-->
     
-    <!--Begin About Section-->
+    <!--Begin Ministries Section-->
     <div id= "ministries">
         <header class= "header header-small intro-img">
             <div class= "container">
                 <h1>Ministries</h1>
             </div>
         </header>
+        <div class= "container text-justify section">
+            <h2><div style= "text-align: justify">Maranatha Baptist Church believes that ministry takes on a variety of forms.
+            We hope that you will join us as we seek to share Christ's love in all its forms.</div></h2>
+        </div>
+        <div class= "container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="http://fillmurray.com/800/450" alt="Worship">
+                    <div class="caption">
+                      <h3>Worship</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="http://fillmurray.com/800/450" alt="Sunday School">
+                    <div class="caption">
+                      <h3>Sunday School</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="http://fillmurray.com/800/450" alt="Children & Youth">
+                    <div class="caption">
+                      <h3>Children & Youth</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="http://fillmurray.com/800/450" alt="Food Ministry">
+                    <div class="caption">
+                      <h3>Food Ministry</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="http://fillmurray.com/800/450" alt="5th Sunday Events">
+                    <div class="caption">
+                      <h3>5th Sunday Events</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="thumbnail">
+                    <img src="http://fillmurray.com/800/450" alt="Ecumenical Opportunities">
+                    <div class="caption">
+                      <h3>Ecumenical Opportunities</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--End About Section-->
     
-    <!--Begin About Section-->
+    <!--Begin Contact Section-->
     <div id= "contact">
         <header class= "header header-small intro-img">
             <div class= "container">
@@ -204,14 +266,53 @@
             </div>
         </header>
     </div>
-    <!--End About Section-->
+    <!--End Contact Us Section-->
+    
+    <!--Begin Footer-->
+    <div class="container-fluid footer">
+        <div class = "row">
+            <div class= "col-sm-4 col-xs-12 border-right footer-info">
+                <h4>&copy2015 Maranatha Baptist Church</h4>
+            </div>
+            <div class= "col-sm-4 col-xs-12 border-right footer-info">
+                <h4>PO Box 307<br>
+                211 Thomas Street<br>
+                Plains, GA 31780</h4>
+            </div>
+            <div class= "col-sm-4 col-xs-12 footer-info">
+                <h4>(229)824-7896<br>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!--End Footer Section-->
+
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script>	
+    <script>
+
+    $(document).ready(function(){
+      $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target
+          || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+            var targetOffset = $target.offset().top;
+            $('html,body')
+            .animate({scrollTop: targetOffset}, 1000);
+           return false;
+          }
+        }
+      });
+    });
+
+
 
       function init_map() {
 		var var_location = new google.maps.LatLng(32.043352, -84.390862);
