@@ -27,7 +27,7 @@ h6, p {
   border-color: #ffffff;
   border-bottom-color: #d3d3d3;
   border-bottom: medium .5px;
-  style="border-radius:none !important"
+  style="border-radius:none !important;
 }
 .navbar-default .navbar-brand {
   color: #d3d3d3;
@@ -87,7 +87,7 @@ h6, p {
     height: 400px;
 }
 .intro-img{
-    background-image: 
+    background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
@@ -95,7 +95,7 @@ h6, p {
     url("../img/MBC_DSC1728.jpg");
 }
 .imnew-img{
-    background-image: 
+    background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
@@ -103,7 +103,7 @@ h6, p {
     url("../img/worship.jpg");
 }
 .about-img{
-    background-image: 
+    background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
@@ -111,7 +111,7 @@ h6, p {
     url("../img/welcomeSign.jpg");
 }
 .ministries-img{
-    background-image: 
+    background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
@@ -119,7 +119,7 @@ h6, p {
     url("../img/churchFamily.jpg");
 }
 .contact-img{
-    background-image: 
+    background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)
@@ -204,7 +204,7 @@ h6, p {
     margin-top: 2em;
     padding-bottom: 2em;
 }
-    
+
 @media (max-width: 768px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #eee6ab;
@@ -257,5 +257,5 @@ h6, p {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
-    
+
 }
